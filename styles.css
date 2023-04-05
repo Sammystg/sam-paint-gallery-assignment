@@ -1,0 +1,230 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* FONTS: 
+font-family: 'East Sea Dokdo', cursive;
+font-family: 'Roboto', sans-serif; */
+
+/* HTML Styles */
+
+/* GENERIC Styles */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+body {
+    margin-top: 0px;
+    /* padding: 0px; */
+    font-family: 'Roboto', sans-serif;
+    color: #201E21;
+    width: 100vw;
+}
+
+h2 {
+    font-size: 75px;
+    line-height: 36px;
+}
+
+/* think h3 styles made lates exhibition section wonky? */
+h3 {
+    text-align: center;
+    line-height: 36px;
+}
+
+/* WRAPPER */
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* HEADER Styles */
+h1, 
+h2,
+h3 {
+    font-family: 'East Sea Dokdo', cursive;
+}
+header {
+    padding: 20px 0 0 0;
+    background-image: url(./assets/group-4@2x.png); 
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* margin-top: 0px; */
+}
+
+h1 {
+    font-size: 122px;
+    line-height: 94.3px;
+    margin: 35vh 0;
+    color: 201E21;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.2px;
+    gap: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #201E21;
+}
+
+a:hover {
+    color: #A7059B;
+}
+
+/* want the isons closer to edge of page */
+#socials {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5rem;   
+    position: relative;
+    left: 87.5rem;
+    color: white;
+    gap: 0.5rem;
+}
+
+/* NAV Styles */
+header ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* used gap above instead of below code*/
+/* nav ul li {
+    padding: 0 20px;
+} */
+
+/* NEW PRODUCT section styles */
+.newProduct {
+    background-color: #FFE9E9;
+    padding: 100px 0;
+}
+
+.newProduct .wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.newProduct img {
+    width: 35vw;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.textContainer {
+    flex-basis:75%;
+    line-height: 29px;
+    letter-spacing: 0.2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newProduct h2 {
+    margin: 0 auto;
+}
+
+button {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 45px;
+    border-radius: 0;
+    line-height: 29px;
+    padding: 10px 20px;
+    background-color: #0178A5;
+    color: white;
+    border: 0;
+    width: 25%;
+}
+
+/* GALLERY styles */
+.gallery {
+    background-color: #F7DAE8;
+}
+
+.gallery ul {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+    margin: 0px;
+}
+
+.gallery li {
+    flex-basis: calc(33% - 20px);
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-top: 0px;
+    padding: 90px 0 0 0;
+}
+
+/* ICONS section */
+.icons {
+    background-color: #FFE9E9;
+    margin-top: 0px;
+}
+
+.icons .wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons .wrapper div {
+    text-align: center;
+    font-size: 55px;
+    line-height: 36px;
+    /* margin-top: 10px; */
+    color: #017A85;
+    margin: 100px 0;
+} 
+
+h3 {
+    margin: 10px 0 0 0;
+    color: #201E21;
+}
+
+/* Brushes and paint info section */
+.brushes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brushes div {
+    width: 50%;
+    /* height: 500px; */
+    /* flex-basis: 50%; */
+    /* max-width: 50%; */
+}
+
+.brushText {
+    /* padding: 20%; */
+    width: 50%;
+    text-align: left; 
+}
+
+.potato {
+    /* max-width: 1200px;
+    width: 90%;
+    margin: 0 auto; */
+    padding: 0 0 0 20%;
+}
+
