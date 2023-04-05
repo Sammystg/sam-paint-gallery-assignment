@@ -42,7 +42,7 @@ h3 {
 
 /* WRAPPER */
 .wrapper {
-    max-width: 1200px;
+    max-width: 1400px;
     width: 90%;
     margin: 0 auto;
 }
@@ -50,7 +50,8 @@ h3 {
 /* HEADER Styles */
 h1, 
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'East Sea Dokdo', cursive;
 }
 header {
@@ -95,7 +96,7 @@ a:hover {
     margin-top: -5rem;
     position: absolute;
     right: 150px;
-    color: black;
+    color: white;
     gap: 0.5rem;
 }
 
@@ -170,6 +171,12 @@ button {
     margin: 0px;
 }
 
+@media (max-width: 700px) {
+    #disappear {
+        display: none;
+    }
+}
+
 .gallery li {
     flex-basis: calc(33% - 20px);
 }
@@ -189,6 +196,12 @@ button {
 .icons .wrapper {
     display: flex;
     justify-content: space-around;
+}
+
+@media (max-width: 700px) {
+    .icons .wrapper {
+        flex-direction: column;
+    }
 }
 
 .icons .wrapper div {
@@ -224,6 +237,7 @@ h3 {
     text-align: left; 
 }
 
+/* FIX POTATO */
 .potato {
     /* max-width: 1200px;
     width: 90%;
@@ -232,7 +246,71 @@ h3 {
 }
 
 /* FOOTER styles */
-footer {
+footer .wrapper {
     display: flex;
     justify-content: space-between;
+}
+
+footer {
+    background-color: #FFE9E9;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.copyright p {
+    margin: 0;
+    padding: 15px
+}
+
+footer ul {
+    padding: 50px;
+}
+
+footer li {
+line-height: 29px;
+}
+/* .footerNav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+} */
+
+.footerContact {
+    text-align: right;
+}
+
+footer h4 {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 55px;
+    margin: 0;
+    padding: 0;
+
+}
+
+input[type=email] {
+    border: 0;
+    width: 75%;
+}
+
+input[type=button] {
+    border: 0;
+    width: 25%;
+
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 45px;
+    border-radius: 0;
+    line-height: 29px;
+    padding: 10px 15px;
+    background-color: #0178A5;
+    color: white;
+    border: 0;
+}
+
+form {
+    width: 100%;
 }
