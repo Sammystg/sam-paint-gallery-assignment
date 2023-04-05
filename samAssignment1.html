@@ -65,7 +65,7 @@
                 <img src="./assets/gallery-image-2@2x.png" alt="birds eye view picture of paints & pallet">
             </li>
             <li>
-                <img src="./assets/gallery-image-3@2x.png" alt="close up pf textured paint">
+                <img id="disappear" src="./assets/gallery-image-3@2x.png" alt="close up pf textured paint">
             </li>
         </ul>
         </div>
@@ -119,32 +119,39 @@
 
 <!-- Footer section -->
 <footer>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a> </li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="formFooter">  
-        <h4>stay updated</h4>
-        <p>subscribe to our new later to stay updated</p>
-        <div class=""> 
-            <form class="emailForm" action="">
-                <label for="#email"></label>
-                <input type="email" id="email" name="email adress" placeholder="enter your email">
-            </form>
-            <button>Subscribe</button>
-        </div>
-    </div> 
+    <div class="wrapper">
+        <nav>
+            <ul class="footerNav">
+                <li><a href="#home">Home</a> </li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="formFooter">  
+            <h4>stay updated</h4>
+            <!-- <p>subscribe to our newsletter to stay updated</p> -->
+            <div class=""> 
+                <form class="emailForm" action="">
+                    <label for="#email">subscribe to our newsletter to stay updated</label><br>
+                    <input type="email" id="email" name="email adress" placeholder="enter your email">
+                    <input type="button" onclick="#" value="subscribe">
+                </form>
+                
+            </div>
+        </div> 
 
-    <div>
-        <h4>Contact</h4>
-        <p>info@email.com | 123-456-7890</p>
-        <p>123 some road, Toronto, ON</p>
-        <p>A5A 5A5, Canada</p>
+        <div class="footerContact">
+            <h4>Contact</h4>
+            <p>info@email.com | 123-456-7890</p>
+            <p>123 some road, Toronto, ON</p>
+            <p>A5A 5A5, Canada</p>
+        </div>
     </div>
 </footer>
+<div class="copyright">
+    <p>Copyright © 2019 Hacker You</p>
+    
+</div>
 
 </html>
